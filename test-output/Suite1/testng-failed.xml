@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite1]">
+  <test parallel="none" name="group(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="orangehrmtestcases.GroupExecution">
+        <methods>
+          <include name="login"/>
+          <include name="launchapplication"/>
+        </methods>
+      </class> <!-- orangehrmtestcases.GroupExecution -->
+    </classes>
+  </test> <!-- group(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
